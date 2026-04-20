@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter contact</title>
+</head>
+<body>
+    <h1>Ajouter un contact</h1>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Nom"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <a href="/contacts">Voir les contacts</a>
+</body>
+</html>
